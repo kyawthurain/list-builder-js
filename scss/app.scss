@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400;700&family=Padauk:wght@400;700&display=swap');
 @import '../node_modules/bootstrap-icons/font/bootstrap-icons.css';
+@import '../node_modules/animate.css/animate.min.css';
 
 //sass customizing
 
@@ -25,5 +26,31 @@ body{
     
     .empty-list:last-child{
         display: block;
+    }
+
+    .list{
+        overflow: hidden;
+
+        #controls{
+            transform: translateX(150%);
+            opacity: 0;
+        transition: 0.5s;
+
+        }
+
+        &:hover{
+            #controls{
+                transform: translateX(0%);
+                opacity: 1;
+            }
+        }
+
+        &:focus-within{
+            #controls{
+                transform: translateX(0%);
+                opacity: 1;
+            }
+        }
+        
     }
 }

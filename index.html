@@ -10,8 +10,8 @@
     <main id="app">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-12">
-                    <div class=" rounded m-3 p-3 container border bg-white">
+                <div class="col-12 col-md-6 mx-auto my-5">
+                    <div class=" rounded mb-3 p-3 container border bg-white">
                         <div class=" text-center mb-3">
                             <h1 class=" fw-bold mb-0">To do list</h1>
                         </div>
@@ -23,7 +23,7 @@
                         </div>
                     </div>
 
-                    <div class="rounded m-3 p-3 container border bg-white d-flex justify-content-between align-items-center">
+                    <div class="rounded mb-3 p-3 container border bg-white d-flex justify-content-between align-items-center">
                        <div>
                             <h3>Your List</h3>
                        </div>
@@ -32,13 +32,15 @@
                        </div>
                     </div>
 
-                    <div id="result" class=" rounded m-3 p-3 container border bg-white">
-                        <div class="empty-list">
+                    <div id="result" class=" rounded mb-3 p-3 container border bg-white">
+                        <div class="empty-list animate__animated animate__swing">
                             <div class=" d-flex flex-column align-items-center py-3">
                                 <img src="./imgs/undraw_no_data_re_kwbl.svg" class=" w-25 mb-3" alt="">
                                 <h3>Here is nothing</h3>
                             </div>   
                         </div>
+
+                        
             
                         <!-- <div class="list">
                             <div class=" mb-3 d-flex justify-content-between align-items-center p-2">
@@ -57,6 +59,10 @@
                             </div>
                         </div> -->
             
+                    </div>
+
+                    <div>
+                        <button id="doneAll" class=" btn btn-dark w-100">Mark all as Done</button>
                     </div>
 
                 </div>
